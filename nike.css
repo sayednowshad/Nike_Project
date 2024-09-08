@@ -1,0 +1,378 @@
+body{
+
+    background-color: black;
+}
+
+.container{
+
+    display: flex;
+    align-items: center;
+    /* background-color: gray; */
+    padding: 18px;
+    /* border: 1px solid white; */
+    margin-bottom : 10px; 
+    position: relative;
+}
+
+.logo{
+
+    height : 40px;
+    color: white;
+    font-family: cursive;
+    width: 100px;
+    border: none;
+    text-shadow: 10px 10px 10px black;
+    font-size: bold;
+    cursor: pointer;
+    margin-top: -9px;
+
+}
+.name{
+
+    margin-left : 10px;
+    font-size:  bold;
+    font-weight: 700;
+    color: white;
+}
+.contains{
+
+    display: flex;
+    justify-content: center;   /* Center child elements horizontally */
+    align-items: center;     /* Center child elements vertically */
+    /* border: 1px solid white; */
+    margin: 0px auto;    /* Center the container horizontally */
+     /* Adjust width to content */
+    /* padding: 10px; */
+    position: relative;
+    /* flex-wrap: wrap; */
+
+}
+.contains a{
+
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    /* align-items: center; */
+    margin-left: 60px;
+    justify-content: space-evenly;
+    
+}
+
+.btn{
+
+    border : none;
+    background-color: black;
+    color: white;
+    font-size: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding : 8px;
+
+}
+a:hover{
+
+    color:  rgb(168, 160, 160);
+    cursor: pointer;
+}
+
+.fullscreen-video{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.matter{
+
+     /* border : 1px solid white; */
+     padding-left : 60px;
+     padding-top : 30px;
+
+}
+.Card{
+
+    display: flex;
+    /* justify-content: end;
+    align-items: end; */
+    /* border: 1px solid white; */
+    margin: 0px auto;    /* Center the container horizontally */
+    /* padding: 10px; */
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+    /* margin-top: 150px; */
+    margin-bottom: 150px;
+    
+}
+
+.image{
+
+    height : 400px ; 
+    width : 450px;
+     background-color: black; 
+     margin-top : -310px;
+     margin-left: 1000px; 
+     border-radius: 16px;
+    /* box-shadow: 10px 10px 10px black; */
+    border: 1px solid black;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    
+}
+
+/* .cover{
+
+    height : 320px;
+    width : 370px;
+    background-color: gray;
+    margin-top : -290px;
+    margin-left: 900px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    border: 1px solid white;
+    position: relative;
+    z-index: 2;
+    background-color: cadetblue;
+
+} */ 
+
+.products{
+
+    border : 1px solid white;
+}
+.img-1{
+
+    width: 300px; /* Adjust size as needed */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.5), /* Neon shadow on all sides */
+                0 0 40px rgba(100, 100, 100, 0.893), 
+                0 0 60px rgba(100, 100, 100, 0.703);
+    transition: transform 0.3s ease, /* Smooth floating effect */
+                box-shadow 0.3s ease; /* Smooth neon effect */
+    position: relative; /* For floating effect */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Hover effect to enhance the glow and float the image */
+.img-1:hover {
+    transform: translateY(-10px); /* Floating effect */
+    box-shadow: 0 0 30px rgba(150, 150, 150, 0.927), /* Intensified neon shadow */
+                0 0 60px rgba(150, 150, 150, 0.5), 
+                0 0 90px rgba(150, 150, 150, 0.881);
+}
+
+.product-2{
+
+    margin-top: -532px;
+    margin-left : 500px;
+}
+.product-3{
+
+    margin-top: -530px;
+    margin-left : 980px;
+}
+.product-4{
+    margin-top : 50px;
+
+    /* margin-top: -530px; */
+    /* margin-left : 50px; */
+}
+.product-5{
+    
+    margin-top : 50px;
+    margin-top : -560px;
+    margin-left: 500px;
+}
+.product-6{
+
+    margin-top: -560px;
+    margin-left : 980px;
+}
+.project{
+
+    margin-top : 760px;
+}
+
+                /* Glich Effect */
+
+                /* Container styling */
+.about-section {
+    margin: 50px;
+    text-align: center;
+    color: #fff; /* For dark mode */
+}
+
+/* Glitch effect styling */
+.glitch {
+    font-size: 48px;
+    position: relative;
+    display: inline-block;
+    color: #fff; /* Main text color */
+}
+
+/* Duplicate layers for glitch effect */
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f00; /* Red layer */
+    background: #000;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0); /* Hides initially */
+    animation: glitch 2s infinite;
+}
+
+/* Styling for the blue layer */
+.glitch::after {
+    color: #0ff; /* Blue layer */
+    left: 2px;
+    text-shadow: -2px 0 white;
+}
+
+/* Styling for the red layer */
+.glitch::before {
+    color: rgb(255, 255, 255); /* Red layer */
+    left: -2px;
+    text-shadow: 2px 0 rgb(255, 255, 255);
+}
+
+/* Glitch animation keyframes */
+@keyframes glitch {
+    0% {
+        clip: rect(0, 900px, 0, 0);
+        transform: translate(0, 0);
+    }
+    20% {
+        clip: rect(5px, 900px, 45px, 0);
+        transform: translate(-2px, -2px);
+    }
+    40% {
+        clip: rect(10px, 900px, 25px, 0);
+        transform: translate(2px, -2px);
+    }
+    60% {
+        clip: rect(20px, 900px, 50px, 0);
+        transform: translate(-2px, 2px);
+    }
+    80% {
+        clip: rect(15px, 900px, 40px, 0);
+        transform: translate(2px, 2px);
+    }
+    100% {
+        clip: rect(0, 900px, 0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.sports{
+
+    margin-left : 590px;
+    margin-top : -230px;
+
+}
+.Teenagers{
+    /* border : 1px solid white; */
+    border-radius: 20px;
+    margin-top : 60px;
+}
+.card-container{
+
+    padding-bottom: 50px;
+}
+
+                   
+.footer {
+    border: 0.3px solid white ;
+    border-radius:  10px;
+    background-color: #000000; /* Dark background for footer */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: left;
+}
+
+/* Footer inner container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+}
+
+/* Individual footer sections */
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 200px; /* Minimum width for responsiveness */
+}
+
+/* Footer section heading */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555; /* Optional underline for headings */
+    padding-bottom: 5px;
+}
+
+/* Footer links styling */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ccc; /* Slightly lighter color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+                    /* Author  */
+
+/* Author section styling */
+.author-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Adjust height as needed */
+    background: #000000; /* Dark background to match footer or page style */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px; /* Spacing from previous content */
+    border-top: 2px solid #555; /* Optional border for separation */
+    padding: 20px;
+}
+
+/* Text before the signature */
+.author-section p {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #ccc;
+}
+
+/* Signature style */
+.signature {
+    font-family: 'Brush Script MT', cursive; /* Signature font */
+    font-size: 36px; /* Adjust size as needed */
+    color: #f4f4f4; /* Signature color */
+    margin: 0;
+    transform: rotate(-8deg); /* Slight rotation for a more natural look */
+}
+
